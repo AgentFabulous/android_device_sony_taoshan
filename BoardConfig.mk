@@ -26,3 +26,6 @@ include $(DEVICE_PATH)/board/*.mk
 
 # Board device vendor
 -include vendor/sony/taoshan/BoardConfigVendor.mk
+
+# Camera wrapper
+TARGET_NEEDS_CAMERA_WRAPPER := false
