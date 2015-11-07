@@ -15,4 +15,5 @@ PRODUCT_COPY_FILES += \
 
 # Lights package
 PRODUCT_PACKAGES += \
-    lights.msm8960
+    lights.qcom
+
