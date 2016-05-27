@@ -18,6 +18,8 @@
   <string name="ambient_display_enable_summary">Scherm aan bij het ontvangen van meldingen</string>
   <string name="hand_wave_gesture_title">Handgebaar</string>
   <string name="hand_wave_gesture_summary">Meldingen laten knipperen bij handgebaar</string>
+  <string name="pick_up_gesture_title">Oppakken</string>
+  <string name="pick_up_gesture_summary">Meldingen laten knipperen bij oppakken</string>
   <string name="pocket_gesture_title">Broekzak</string>
   <string name="pocket_gesture_summary">Meldingen laten knipperen bij verwijderen uit broekzak</string>
   <string name="proximity_wake_enable_title">Ontwaken bij dichtbij</string>
