@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 # Board device path
 DEVICE_PATH := device/sony/taoshan
 
