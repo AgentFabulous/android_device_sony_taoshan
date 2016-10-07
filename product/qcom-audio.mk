@@ -4,8 +4,7 @@ PRODUCT_PACKAGES += \
     audio.primary.msm8960 \
     audio.r_submix.default \
     audio.usb.default \
-    libaudio-resampler \
-    libqcomvoiceprocessing
+    libaudio-resampler
 
 # Audio tools
 PRODUCT_PACKAGES += \
