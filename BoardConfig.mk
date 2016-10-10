@@ -19,6 +19,7 @@ DEVICE_PATH := device/sony/taoshan
 
 # Board device headers
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
+PRODUCT_VENDOR_KERNEL_HEADERS :=  $(DEVICE_PATH)/kernel-headers
 
 # Board device elements
 include $(DEVICE_PATH)/PlatformConfig.mk
