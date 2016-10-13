@@ -3,6 +3,7 @@ Copyright 2015 - The CyanogenMod Project
 Sony Xperia L
 ==============
 
+*TESTING TREE. WILL EAT YOUR CAT.*
 The Sony Xperia L (codenamed _"Taoshan"_) is a mid-range smartphone from Sony Mobile.
 
 It was announced in March 2013.
