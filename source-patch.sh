@@ -13,17 +13,17 @@ croot;
 cd build/;
 git fetch http://github.com/AdrianDC/android_development_backup n_build;
 git reset --hard FETCH_HEAD; git stash -u;
-sed -i 's/NRD90M/NBD90Z/g' core/build_id.mk;
-git add -A; git commit -m "NBD90Z";
+sed -i 's/7.0/7.1/g' core/version_defaults.mk;
+sed -i 's/NRD90M/NDE63P/g' core/build_id.mk;
+git add -A; git commit -m "NDE63P";
 croot;
 # ==========================================================
-# sepolicy
+# device/qcom/sepolicy
 croot;
 cd device/qcom/sepolicy;
-sed -i 's/# attribute qti_debugfs_domain/attribute qti_debugfs_domain/g' common/attributes;
-sed -i 's/allow audioserver debugfs:file rw_file_perms/#allow audioserver debugfs:file rw_file_perms/g' common/audioserver.te;
-git add common/attributes; git add common/audioserver.te;
-git commit -m "Fix up sepolicies";
+git fetch https://github.com/AgentFabulous/android_device_qcom_sepolicy aosp7.1;
+git cherry-pick f617699a2ef6b2d791f2bc3d1775e2c850773ea8;
+git cherry-pick 9126ab94dd43271219036aa8928bf19a3e74c91d;
 croot;
 # ==========================================================
 # bionic
@@ -38,7 +38,8 @@ croot;
 croot;
 cd system/vold;
 git fetch https://github.com/AgentFabulous/android_system_vold aosp7;
-git reset --hard FETCH_HEAD;
+git cherry-pick 903883fb89e6f37e63232b9185b012323dd8e7a0;
+git cherry-pick f56ed9d3abfa71f0df838d1e9ffc7d4c2f415103;
 git stash -u;
 croot;
 # ==========================================================
