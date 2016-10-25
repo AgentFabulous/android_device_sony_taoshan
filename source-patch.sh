@@ -11,11 +11,8 @@ croot;
 # build
 croot;
 cd build/;
-git fetch http://github.com/AdrianDC/android_development_backup n_build;
+git fetch http://github.com/AgentFabulous/platform_build aosp7.1;
 git reset --hard FETCH_HEAD; git stash -u;
-sed -i 's/7.0/7.1/g' core/version_defaults.mk;
-sed -i 's/NRD90M/NDE63P/g' core/build_id.mk;
-git add -A; git commit -m "NDE63P";
 croot;
 # ==========================================================
 # device/qcom/sepolicy
@@ -53,7 +50,7 @@ croot;
 # frameworks/base
 croot;
 cd frameworks/base;
-git fetch https://github.com/AgentFabulous/platform_frameworks_base aosp7;
+git fetch https://github.com/AgentFabulous/platform_frameworks_base aosp7.1;
 git cherry-pick 42b41a284bb8009ab8c620490ff3ed02f913b84d;
 git stash -u;
 croot;
