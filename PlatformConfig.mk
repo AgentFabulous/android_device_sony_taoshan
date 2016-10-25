@@ -1,5 +1,6 @@
 # Platform
 TARGET_BOARD_PLATFORM := msm8960
+QCOM_BOARD_PLATFORMS += msm8960
 
 # Architecture
 TARGET_ARCH := arm
