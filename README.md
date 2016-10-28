@@ -1,4 +1,4 @@
-Copyright 2015 - The CyanogenMod Project
+Copyright 2016 - The CyanogenMod Project
 
 Sony Xperia L
 ==============
