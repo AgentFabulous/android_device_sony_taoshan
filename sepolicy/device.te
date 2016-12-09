@@ -3,3 +3,4 @@ type ftma_block_device, dev_type;
 type ftmd_block_device, dev_type;
 type lta_label_block_device, dev_type;
 type ta_block_device, dev_type;
+type persist_block_device, dev_type;
