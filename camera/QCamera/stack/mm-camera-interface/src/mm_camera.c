@@ -382,7 +382,7 @@ int32_t mm_camera_close(mm_camera_obj_t *my_obj)
         mm_camera_send_native_ctrl_cmd(my_obj,
                                        CAMERA_SET_PARM_LED_MODE,
                                        sizeof(int32_t),
-                                       value);
+                                       &value);
     }
 
     CDBG("%s : Close evt Poll Thread in Cam Close",__func__);

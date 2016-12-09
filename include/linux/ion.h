@@ -515,6 +515,7 @@ struct ion_allocation_data {
 #else
         /* Userspace wants this renamed... */
 	unsigned int heap_id_mask;
+	unsigned int heap_mask;
 #endif
 	unsigned int flags;
 	struct ion_handle *handle;

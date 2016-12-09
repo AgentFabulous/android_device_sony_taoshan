@@ -81,6 +81,8 @@ LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
 LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include/media
 LOCAL_ADDITIONAL_DEPENDENCIES := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
 
+LOCAL_C_INCLUDES += hardware/qcom/display/msm8960/libgralloc
+LOCAL_C_INCLUDES += hardware/qcom/media/msm8974/libstagefrighthw 
 LOCAL_C_INCLUDES += $(call project-path-for,qcom-display)/libgralloc \
         $(call project-path-for,qcom-media)/libstagefrighthw \
         system/media/camera/include
@@ -97,9 +99,9 @@ LOCAL_SHARED_LIBRARIES := libutils libui libcamera_client liblog libcutils
 LOCAL_SHARED_LIBRARIES += libmmcamera_interface
 LOCAL_SHARED_LIBRARIES+= libbinder libmmjpeg_interface libhardware
 
-ifneq ($(call is-platform-sdk-version-at-least,20),true)
-LOCAL_CFLAGS += -include bionic/libc/kernel/common/linux/socket.h
-endif
+#ifneq ($(call is-platform-sdk-version-at-least,20),true)
+#LOCAL_CFLAGS += -include bionic/libc/kernel/common/linux/socket.h
+#endif
 
 LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)/hw
 LOCAL_MODULE:= camera.$(TARGET_BOARD_PLATFORM)

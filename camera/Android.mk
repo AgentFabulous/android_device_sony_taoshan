@@ -130,7 +130,7 @@ ifneq ($(USE_CAMERA_STUB),true)
       else
         LOCAL_C_INCLUDES+= $(call project-path-for,qcom-media)/libgenlock
       endif
-
+      LOCAL_C_INCLUDES+= $(call project-path-for,qcom-display)/msm8960/libgralloc
       LOCAL_C_INCLUDES+= $(call project-path-for,qcom-display)/libgralloc
       LOCAL_C_INCLUDES+= $(call project-path-for,qcom-media)/libstagefrighthw
 
@@ -147,9 +147,9 @@ ifneq ($(USE_CAMERA_STUB),true)
         LOCAL_SHARED_LIBRARIES+= libdl
       endif
 
-      ifneq ($(call is-platform-sdk-version-at-least,20),true)
-      LOCAL_CFLAGS += -include bionic/libc/kernel/common/linux/socket.h
-      endif
+#      ifneq ($(call is-platform-sdk-version-at-least,20),true)
+ #     LOCAL_CFLAGS += -include bionic/libc/kernel/common/linux/socket.h
+  #    endif
 
       LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)/hw
       LOCAL_MODULE:= camera_1.0.$(TARGET_BOARD_PLATFORM)
