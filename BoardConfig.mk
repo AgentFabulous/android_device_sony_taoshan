@@ -24,6 +24,7 @@ PRODUCT_VENDOR_KERNEL_HEADERS :=  $(DEVICE_PATH)/kernel-headers
 # Board device elements
 include $(DEVICE_PATH)/PlatformConfig.mk
 include $(DEVICE_PATH)/board/*.mk
+TARGET_POWERHAL_VARIANT := qcom
 
 # Board device vendor
 -include vendor/sony/taoshan/BoardConfigVendor.mk
