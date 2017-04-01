@@ -10,5 +10,5 @@ allow updatemiscta tad:unix_stream_socket connectto;
 allow updatemiscta tad_socket:sock_file write;
 
 # Set persist.tareset.notfirstboot
-set_prop(updatemiscta, persist_tareset_notfirstboot_prop)
+#set_prop(updatemiscta, persist_tareset_notfirstboot_prop)
 
